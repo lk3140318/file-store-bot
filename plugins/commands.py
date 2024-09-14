@@ -53,12 +53,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton( '💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@sastamarvel01?si=KiYYZ5mByFO-O_fl')
+            InlineKeyboardButton( '🙏 𝘀ᴜʙ𝘀ᴄʀɪʙᴇ ᴍʏ 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 ᴄʜᴀɴɴᴇʟ', url='https://t.me/+g7juTHwf6_tlM2Y9')
             ],[
-            InlineKeyboardButton( '💝 movies ', url='https://t.me/+ccx-5xVHyro3ZjNl')
+            InlineKeyboardButton( '💝 𝗠𝗼𝘃𝗶𝗲 𝗪𝗲𝗯𝘀𝗲𝗿𝗶𝗲𝘀 𝗔𝗻𝗶𝗺𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ', url='https://t.me/+wz3mM7dO7DMwZTBl')
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/aapna_Movies')
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ', url='https://t.me/@advaitkumar_bot'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+g7juTHwf6_tlM2Y9')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
@@ -222,7 +222,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                         InlineKeyboardButton('🚀 New Anime Update🖥️', url="https://t.me/group_discd")]
+                         InlineKeyboardButton('🚀 New Anime Movie Webseries Update🖥️', url="https://t.me/+wz3mM7dO7DMwZTBl")]
                     ]
                 )
             ) 
@@ -230,7 +230,7 @@ async def start(client, message):
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
-            await k.edit_text("<b>Your File/Video is successfully deleted!!! You Want Again [Get Here](https://t.me/aapna_Movies).</b>")
+            await k.edit_text("<b>Your File/Video is successfully deleted!!! You Want Again [Get Here]().</b>")
             await m.edit_text("<b>❤️‍🔥.</b>")
             await asyncio.sleep(1)
             await m.delete()
@@ -324,12 +324,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton( '💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@sastamarvel01?si=KiYYZ5mByFO-O_fl')
+            InlineKeyboardButton( '💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+wz3mM7dO7DMwZTBl')
             ],[
-            InlineKeyboardButton( '💝 movies ', url='https://t.me/+ccx-5xVHyro3ZjNl')
+            InlineKeyboardButton( '💝 movies ', url='https://t.me/+wz3mM7dO7DMwZTBl')
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/aapna_Movies')
+            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ', url='https://t.me/@advaitkumar_bot'),
+            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/+wz3mM7dO7DMwZTBl')
             ],[
             InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
             ],[
@@ -432,9 +432,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                 [
                                                     InlineKeyboardButton('🖥️ Watch online 🖥️', url= stream)],  # web stream Link
                                                [
-                                                    InlineKeyboardButton('📁 Want File again ', url='https://t.me/aapna_Movies')],
+                                                    InlineKeyboardButton('📁 Want File again ', url='https://t.me/+wz3mM7dO7DMwZTBl')],
                                                [
-                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+ccx-5xVHyro3ZjNl')]
+                                                    InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ', url='https://t.me/@advaitkumar_bot')]
                                                   ]
             )
             ) 
