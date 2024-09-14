@@ -38,9 +38,9 @@ async def gen_link_s(bot, message):
     user_id = message.from_user.id
     user = await get_user(user_id)
     share_link = f"https://t.me/{BOT_USERNAME}?start={outstr}"
-    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
+    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ👇:\n\n🔗 ᴏʀɪɢɪɴᴀʟ ʟɪɴᴋ :- {share_link}</b>")
     short_link = await get_short_link(user, share_link)
-    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
+    await message.reply(f"<b>⭕ ʜᴇʀᴇ ɪs ʏᴏᴜʀ ʟɪɴᴋ👇:\n\n🖇️ sʜᴏʀᴛ ʟɪɴᴋ :- {short_link}</b>")
     
 
 @Client.on_message(filters.command(['batch', 'pbatch']))
@@ -75,7 +75,7 @@ async def gen_link_batch(bot, message):
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('@what_if_dubb_bot This may be a private channel / group. Make me an admin over there to index the files.')
+        return await message.reply('@advaitkumar_bot This may be a private channel / group. Make me an admin over there to index the files.')
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Invalid Link specified.')
     except Exception as e:
