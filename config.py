@@ -34,7 +34,7 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6699190464:AAE8cJGSa5NrO45gWPVfOqbzMEWXwlI1JAY")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "File_sharing_A_2_Z_Bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://telegra.ph/file/81eef9d6c7a09b0e1425c.jpg')).split() # Bot Start Picture
 
