@@ -77,13 +77,13 @@ class Var(object):
         APP_NAME = str(getenv('APP_NAME'))
     
     else:
-        ON_HEROKU = False
+        ON_HEROKU = True
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://file-store-botv1.onrender.com"
+        URL = "https://systematic-malinde-lk57-327993a9.koyeb.app/"
     else:
-        URL = "https://file-store-botv1.onrender.com"
+        URL = "https://systematic-malinde-lk57-327993a9.koyeb.app/"
 
 
 
